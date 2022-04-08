@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <!-- Website der Librarby: http://scrollmagic.io -->
+    <!-- Dokumentation der Library http://scrollmagic.io/docs/index.html -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="Strophe1"> Jage die Ängste fort
+            <br>Und die Angst vor den Ängsten.
+            <br>Für die paar Jahre
+            <br>Wird wohl alles noch reichen.
+            <br>Das Brot im Kasten
+            <br>Und der Anzug im Schrank.</div>
+
+        <div class="Strophe2"> Sage nicht mein.
+            <br>Es ist dir alles geliehen.
+            <br>Lebe auf Zeit und sieh,
+            <br>Wie wenig du brauchst.
+            <br>Richte dich ein.
+            <br>Und halte den Koffer bereit.
+            </div>
+
+        <div class="Strophe3"> Es ist wahr, was sie sagen:
+            <br>Was kommen muss, kommt.
+            <br>Geh dem Leid nicht entgegen.
+            <br>Und ist es da,
+            <br>Sieh ihm still ins Gesicht.
+            <br>Es ist vergänglich wie Glück.</div>
+
+        <div class="Strophe4"> Erwarte nichts.
+            <br>Und hüte besorgt dein Geheimnis.
+            <br>Auch der Bruder verrät,
+            <br>Geht es um dich oder ihn.
+            <br>Den eignen Schatten nimm
+            <br>Zum Weggefährten.</div>
+            
+        <div class="Strophe5"> Feg deine Stube wohl.
+            <br>Und tausche den Gruß mit dem Nachbarn.
+            <br>Flicke heiter den Zaun
+            <br>Und auch die Glocke am Tor.
+            <br>Die Wunde in dir halte wach
+            <br>Unter dem Dach im Einstweilen.</div>   
+            
+      <div class="Strophe6"> Zerreiß deine Pläne. Sei klug
+        <br>Und halte dich an Wunder.
+        <br>Sie sind lang schon verzeichnet
+        <br>Im großen Plan.
+        <br>Jage die Ängste fort
+        <br>Und die Angst vor den Ängsten.</div>         
+
+        <div id="outro"> Rezept Mascha Kaléko</div>
+
+
+    </div>
+
+    <script>
+        var controller = new ScrollMagic.Controller();
+
+        var scenePin = new ScrollMagic.Scene({
+            triggerElement: ".Strophe2",
+			triggerHook: 0.2, 
+			duration: "0", 
+        }).setClassToggle(".Strophe2", "Trigger")
+
+        controller.addScene(scenePin);
+
+        var scenePin = new ScrollMagic.Scene({
+            triggerElement: ".Strophe3",
+			triggerHook: 0.2, 
+			duration: "0", 
+        }).setClassToggle(".Strophe3", "Trigger")
+        
+        controller.addScene(scenePin);
+
+        var scenePin = new ScrollMagic.Scene({
+            triggerElement: ".Strophe4",
+			triggerHook: 0.2, 
+			duration: "0", 
+        }).setClassToggle(".Strophe4", "Trigger")
+        
+        controller.addScene(scenePin);
+
+        var scenePin = new ScrollMagic.Scene({
+            triggerElement: ".Strophe5",
+			triggerHook: 0.2, 
+			duration: "0", 
+        }).setClassToggle(".Strophe5", "Trigger")
+        
+        controller.addScene(scenePin);
+
+        var scenePin = new ScrollMagic.Scene({
+            triggerElement: ".Strophe6",
+			triggerHook: 0.2, 
+			duration: "0", 
+        }).setClassToggle(".Strophe6", "Trigger")
+        
+        controller.addScene(scenePin);
+
+
+
+    </script>
+    <style>
+        #Strophe1 {
+            background-color: rgb(231, 200, 96);
+            height: 92vh;
+        }
+        
+        .Strophe2 {
+            background: rgb(101, 111, 133);
+            height: 85vh
+        }
+
+        .Strophe3 {
+            background-color: rgb(165, 182, 103);
+            height: 95vh;
+        }
+
+        .Strophe4 {
+            background-color: rgb(119, 111, 192);
+            height: 95vh;
+        }
+
+        .Strophe5 {
+            background-color: rgb(234, 192, 238);
+            height: 95vh;
+        }
+
+        .Strophe6 {
+            background-color: rgb(250, 126, 43);
+            height: 95vh;
+        }
+
+        #outro {
+            height: 40vh;
+        }
+
+        .Trigger {
+            background: rgb(231, 200, 96);
+
+        }
+
+        html{
+            font-size: 50px;
+            
+        }
+
+
+
+    </style>
+</body>
+
+</html>
